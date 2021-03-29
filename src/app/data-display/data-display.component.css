@@ -1,0 +1,50 @@
+.main__section--wrap {
+  padding: 40px 40px 170px 40px;
+  width: 100%;
+  position: relative;
+  background-color: #1e202b;
+}
+.main__cards {
+  display: flex;
+  border-radius: 10px;
+  border: 2px solid #1e202b;
+  color: #eee;
+  width: 79%;
+  position: absolute;
+  top: -40%;
+  left: 10%;
+}
+.main__card--large {
+  width: 40%;
+}
+.main__card--large--info {
+  padding: 17px 13px;
+}
+.main__card--date--wrap {
+  display: flex;
+  background-color: #1e202b;
+  padding: 15px;
+  justify-content: space-between;
+}
+.main__card--info {
+  background-color: #323544;
+  padding: 15px;
+}
+.main__card--place {
+  padding: 10px 10px 10px 0;
+  font-size: 19px;
+}
+.main__card--misc--icon {
+  width: 20px;
+  margin: 2px 2px -4px 14px;
+}
+.main__card--misc--icon:first-child {
+  margin: 2px 2px -4px 0px;
+}
+.main__card--temp {
+  padding: 10px 10px 10px 0;
+  font-size: 22px;
+}
+app-week-weather {
+  width: 60%;
+}

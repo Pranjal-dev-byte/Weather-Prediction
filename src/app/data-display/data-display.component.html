@@ -1,0 +1,41 @@
+<div *ngIf="dataObj" class="main__section--wrap">
+  <div class="main__cards">
+    <div class="main__card--large">
+      <div class="main__card--date--wrap">
+        <div class="main__card--day">
+          {{ dataObj?.location.localtime | date: "EEEE" }}
+        </div>
+        <div class="main__card--date">
+          {{ dataObj?.location.localtime | date: "dd MMM" }}
+        </div>
+      </div>
+      <div class="main__card--info">
+        <div class="main__card--place">{{ dataObj?.location.name }}</div>
+        <div class="main__card--temp">
+          {{ dataObj?.current.temperature }}<sup>o</sup>C
+        </div>
+        <div class="main__card--misc">
+          <img
+            src="../../assets/images/icon-umberella@2x.png"
+            alt=""
+            class="main__card--misc--icon"
+          />
+          {{ dataObj?.current.humidity }}%
+          <img
+            src="../../assets/images/icon-wind@2x.png"
+            alt=""
+            class="main__card--misc--icon"
+          />
+          {{ dataObj?.current.wind_dir }}
+          <img
+            src="../../assets/images/icon-compass@2x.png"
+            alt=""
+            class="main__card--misc--icon"
+          />
+          {{ dataObj?.current.wind_speed }} km/hr
+        </div>
+      </div>
+    </div>
+    <app-week-weather></app-week-weather>
+  </div>
+</div>

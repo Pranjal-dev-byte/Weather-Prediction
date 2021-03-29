@@ -1,0 +1,12 @@
+<main class="main">
+  <div class="main__search--wrap">
+    <input
+      type="text"
+      id="location"
+      placeholder="New York"
+      [(ngModel)]="loc"
+      class="main__input"
+    />
+    <button class="main__find" (click)="onClick(loc)">Find</button>
+  </div>
+</main>

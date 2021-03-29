@@ -1,0 +1,25 @@
+.main--cards-thin {
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  justify-content: space-between;
+}
+.main--card {
+  width: 18%;
+  text-align: center;
+  background-color: #262936;
+}
+.main--card:nth-of-type(2n) {
+  background-color: #323544;
+}
+.main--card-day {
+  padding: 15px;
+}
+
+.main--card-icon {
+  padding: 30px 15px;
+}
+.main--card-temp {
+  padding-bottom: 15px;
+  text-align: center;
+}

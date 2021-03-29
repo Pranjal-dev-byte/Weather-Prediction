@@ -1,0 +1,37 @@
+.main {
+  background-image: url("../../assets/images/oliver-niblett-wh-7GeXxItI-unsplash.jpg");
+  background-size: cover;
+  background-position: bottom;
+  padding: 70px 0;
+  min-height: 350px;
+}
+.main__search--wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.main__input {
+  width: 80%;
+  background: #1e202b;
+  border: none;
+  margin: 0 20px;
+  padding: 20px 50px 20px 20px;
+  border-radius: 30px;
+  color: aliceblue;
+}
+.main__input:focus,
+.main__find:focus {
+  outline: none;
+}
+.main__find {
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  padding: 15px 40px;
+  right: 10.3%;
+  bottom: 5px;
+  border-radius: 30px;
+  background-color: #009ad8;
+  color: #eee;
+}
